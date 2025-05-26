@@ -1,0 +1,37 @@
+{
+  "experiment_id": "exp_20250526_231750",
+  "name": "word2vec_svm",
+  "timestamp": "2025-05-26T23:17:50.943017",
+  "config": {
+    "model_name": "svm",
+    "imbalance_method": "class_weight",
+    "tuning_method": "grid",
+    "best_params": {
+      "C": 10,
+      "class_weight": "balanced",
+      "gamma": "scale",
+      "kernel": "rbf"
+    },
+    "data_info": {
+      "original_train": [
+        262,
+        100
+      ],
+      "balanced_train": [
+        262,
+        100
+      ]
+    }
+  },
+  "results": {
+    "cv_score": 0.7027781755977245,
+    "test_results": {
+      "macro_f1": 0.7458583169763294,
+      "micro_f1": 0.7575757575757576,
+      "weighted_f1": 0.7457668155296614
+    },
+    "training_time": 1.855003833770752
+  },
+  "training_time": 1.855003833770752,
+  "notes": ""
+}

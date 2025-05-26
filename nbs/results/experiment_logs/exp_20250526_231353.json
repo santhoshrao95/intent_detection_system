@@ -1,0 +1,36 @@
+{
+  "experiment_id": "exp_20250526_231353",
+  "name": "word2vec_LogisticRegression",
+  "timestamp": "2025-05-26T23:13:53.204430",
+  "config": {
+    "model_name": "logistic_regression",
+    "imbalance_method": "class_weight",
+    "tuning_method": "grid",
+    "best_params": {
+      "C": 100,
+      "class_weight": "balanced",
+      "max_iter": 1000
+    },
+    "data_info": {
+      "original_train": [
+        262,
+        100
+      ],
+      "balanced_train": [
+        262,
+        100
+      ]
+    }
+  },
+  "results": {
+    "cv_score": 0.578042328042328,
+    "test_results": {
+      "macro_f1": 0.6430254930254931,
+      "micro_f1": 0.6818181818181818,
+      "weighted_f1": 0.6611264156718702
+    },
+    "training_time": 1.275745153427124
+  },
+  "training_time": 1.275745153427124,
+  "notes": ""
+}

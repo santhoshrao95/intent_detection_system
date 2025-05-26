@@ -1,0 +1,36 @@
+{
+  "experiment_id": "exp_20250525_184707",
+  "name": "Baseline_TF-IDF_LogisticRegression",
+  "timestamp": "2025-05-25T18:47:07.832096",
+  "config": {
+    "model_name": "logistic_regression",
+    "imbalance_method": "class_weight",
+    "tuning_method": "grid",
+    "best_params": {
+      "C": 10,
+      "class_weight": "balanced",
+      "max_iter": 1000
+    },
+    "data_info": {
+      "original_train": [
+        262,
+        100
+      ],
+      "balanced_train": [
+        262,
+        100
+      ]
+    }
+  },
+  "results": {
+    "cv_score": 0.5174300831443689,
+    "test_results": {
+      "macro_f1": 0.5985776128633272,
+      "micro_f1": 0.6363636363636364,
+      "weighted_f1": 0.6176264812628449
+    },
+    "training_time": 1.2492668628692627
+  },
+  "training_time": 1.2492668628692627,
+  "notes": ""
+}

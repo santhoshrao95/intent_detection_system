@@ -1,0 +1,37 @@
+{
+  "experiment_id": "exp_20250526_231657",
+  "name": "glove_svm",
+  "timestamp": "2025-05-26T23:16:57.663867",
+  "config": {
+    "model_name": "svm",
+    "imbalance_method": "class_weight",
+    "tuning_method": "grid",
+    "best_params": {
+      "C": 0.1,
+      "class_weight": null,
+      "gamma": "scale",
+      "kernel": "linear"
+    },
+    "data_info": {
+      "original_train": [
+        262,
+        100
+      ],
+      "balanced_train": [
+        262,
+        100
+      ]
+    }
+  },
+  "results": {
+    "cv_score": 0.008895802725203815,
+    "test_results": {
+      "macro_f1": 0.0091324200913242,
+      "micro_f1": 0.10606060606060606,
+      "weighted_f1": 0.0203403902034039
+    },
+    "training_time": 1.7889909744262695
+  },
+  "training_time": 1.7889909744262695,
+  "notes": ""
+}

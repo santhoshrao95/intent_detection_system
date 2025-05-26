@@ -1,0 +1,37 @@
+{
+  "experiment_id": "exp_20250526_231853",
+  "name": "sentence_bert_svm",
+  "timestamp": "2025-05-26T23:18:53.829961",
+  "config": {
+    "model_name": "svm",
+    "imbalance_method": "class_weight",
+    "tuning_method": "grid",
+    "best_params": {
+      "C": 10,
+      "class_weight": "balanced",
+      "gamma": "scale",
+      "kernel": "linear"
+    },
+    "data_info": {
+      "original_train": [
+        262,
+        384
+      ],
+      "balanced_train": [
+        262,
+        384
+      ]
+    }
+  },
+  "results": {
+    "cv_score": 0.9050999793856936,
+    "test_results": {
+      "macro_f1": 0.8575963718820862,
+      "micro_f1": 0.8636363636363636,
+      "weighted_f1": 0.8682539682539683
+    },
+    "training_time": 2.5207841396331787
+  },
+  "training_time": 2.5207841396331787,
+  "notes": ""
+}

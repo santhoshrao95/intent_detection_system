@@ -1,0 +1,79 @@
+Classification Report - tfidf_weighted_word2vec_svm
+Experiment ID: exp_20250526_231615
+Timestamp: 2025-05-26 23:16:16.847507
+============================================================
+
+CONFIGURATION:
+  experiment_name: tfidf_weighted_word2vec_svm
+  data_path: ../data/sofmattress_train.csv
+  vectorizer_type: tfidf_weighted_word2vec
+  model_name: svm
+  imbalance_method: class_weight
+  tuning_method: grid
+  test_size: 0.2
+  cv_folds: 5
+
+============================================================
+
+PERFORMANCE METRICS:
+  Macro F1 (Primary):    0.7986
+  Micro F1:              0.7879
+  Weighted F1:           0.7886
+  Accuracy:              0.7879
+  Training Time:         1.89 seconds
+
+============================================================
+
+DETAILED CLASSIFICATION REPORT:
+                       precision    recall  f1-score   support
+
+100_NIGHT_TRIAL_OFFER       1.00      0.75      0.86         4
+   ABOUT_SOF_MATTRESS       1.00      0.50      0.67         2
+         CANCEL_ORDER       1.00      1.00      1.00         2
+        CHECK_PINCODE       1.00      1.00      1.00         2
+                  COD       1.00      1.00      1.00         2
+           COMPARISON       1.00      0.50      0.67         2
+    DELAY_IN_DELIVERY       1.00      0.50      0.67         2
+         DISTRIBUTORS       0.44      1.00      0.61         7
+                  EMI       0.83      1.00      0.91         5
+        ERGO_FEATURES       1.00      0.50      0.67         2
+             LEAD_GEN       1.00      0.50      0.67         4
+        MATTRESS_COST       1.00      1.00      1.00         5
+               OFFERS       0.67      1.00      0.80         2
+         ORDER_STATUS       0.67      0.50      0.57         4
+       ORTHO_FEATURES       1.00      0.50      0.67         4
+              PILLOWS       1.00      1.00      1.00         2
+     PRODUCT_VARIANTS       1.00      1.00      1.00         4
+      RETURN_EXCHANGE       1.00      0.33      0.50         3
+   SIZE_CUSTOMIZATION       0.50      1.00      0.67         2
+             WARRANTY       1.00      1.00      1.00         2
+   WHAT_SIZE_TO_ORDER       1.00      0.75      0.86         4
+
+             accuracy                           0.79        66
+            macro avg       0.91      0.78      0.80        66
+         weighted avg       0.88      0.79      0.79        66
+
+============================================================
+
+PER-CLASS PERFORMANCE:
+  CANCEL_ORDER              F1: 1.0000  P: 1.0000  R: 1.0000  Support: 2
+  CHECK_PINCODE             F1: 1.0000  P: 1.0000  R: 1.0000  Support: 2
+  COD                       F1: 1.0000  P: 1.0000  R: 1.0000  Support: 2
+  MATTRESS_COST             F1: 1.0000  P: 1.0000  R: 1.0000  Support: 5
+  PILLOWS                   F1: 1.0000  P: 1.0000  R: 1.0000  Support: 2
+  PRODUCT_VARIANTS          F1: 1.0000  P: 1.0000  R: 1.0000  Support: 4
+  WARRANTY                  F1: 1.0000  P: 1.0000  R: 1.0000  Support: 2
+  EMI                       F1: 0.9091  P: 0.8333  R: 1.0000  Support: 5
+  100_NIGHT_TRIAL_OFFER     F1: 0.8571  P: 1.0000  R: 0.7500  Support: 4
+  WHAT_SIZE_TO_ORDER        F1: 0.8571  P: 1.0000  R: 0.7500  Support: 4
+  OFFERS                    F1: 0.8000  P: 0.6667  R: 1.0000  Support: 2
+  ABOUT_SOF_MATTRESS        F1: 0.6667  P: 1.0000  R: 0.5000  Support: 2
+  COMPARISON                F1: 0.6667  P: 1.0000  R: 0.5000  Support: 2
+  DELAY_IN_DELIVERY         F1: 0.6667  P: 1.0000  R: 0.5000  Support: 2
+  ERGO_FEATURES             F1: 0.6667  P: 1.0000  R: 0.5000  Support: 2
+  LEAD_GEN                  F1: 0.6667  P: 1.0000  R: 0.5000  Support: 4
+  ORTHO_FEATURES            F1: 0.6667  P: 1.0000  R: 0.5000  Support: 4
+  SIZE_CUSTOMIZATION        F1: 0.6667  P: 0.5000  R: 1.0000  Support: 2
+  DISTRIBUTORS              F1: 0.6087  P: 0.4375  R: 1.0000  Support: 7
+  ORDER_STATUS              F1: 0.5714  P: 0.6667  R: 0.5000  Support: 4
+  RETURN_EXCHANGE           F1: 0.5000  P: 1.0000  R: 0.3333  Support: 3

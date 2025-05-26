@@ -1,0 +1,79 @@
+Classification Report - sentence_bert_LogisticRegression
+Experiment ID: exp_20250526_232014
+Timestamp: 2025-05-26 23:20:16.417205
+============================================================
+
+CONFIGURATION:
+  experiment_name: sentence_bert_LogisticRegression
+  data_path: ../data/sofmattress_train.csv
+  vectorizer_type: sentence_bert
+  model_name: logistic_regression
+  imbalance_method: class_weight
+  tuning_method: grid
+  test_size: 0.2
+  cv_folds: 5
+
+============================================================
+
+PERFORMANCE METRICS:
+  Macro F1 (Primary):    0.9146
+  Micro F1:              0.9242
+  Weighted F1:           0.9237
+  Accuracy:              0.9242
+  Training Time:         1.41 seconds
+
+============================================================
+
+DETAILED CLASSIFICATION REPORT:
+                       precision    recall  f1-score   support
+
+100_NIGHT_TRIAL_OFFER       1.00      0.75      0.86         4
+   ABOUT_SOF_MATTRESS       1.00      1.00      1.00         2
+         CANCEL_ORDER       1.00      1.00      1.00         2
+        CHECK_PINCODE       1.00      1.00      1.00         2
+                  COD       1.00      1.00      1.00         2
+           COMPARISON       0.67      1.00      0.80         2
+    DELAY_IN_DELIVERY       0.50      1.00      0.67         2
+         DISTRIBUTORS       1.00      1.00      1.00         7
+                  EMI       1.00      1.00      1.00         5
+        ERGO_FEATURES       1.00      0.50      0.67         2
+             LEAD_GEN       1.00      1.00      1.00         4
+        MATTRESS_COST       1.00      1.00      1.00         5
+               OFFERS       0.67      1.00      0.80         2
+         ORDER_STATUS       1.00      0.50      0.67         4
+       ORTHO_FEATURES       1.00      1.00      1.00         4
+              PILLOWS       1.00      1.00      1.00         2
+     PRODUCT_VARIANTS       0.75      0.75      0.75         4
+      RETURN_EXCHANGE       1.00      1.00      1.00         3
+   SIZE_CUSTOMIZATION       1.00      1.00      1.00         2
+             WARRANTY       1.00      1.00      1.00         2
+   WHAT_SIZE_TO_ORDER       1.00      1.00      1.00         4
+
+             accuracy                           0.92        66
+            macro avg       0.93      0.93      0.91        66
+         weighted avg       0.95      0.92      0.92        66
+
+============================================================
+
+PER-CLASS PERFORMANCE:
+  ABOUT_SOF_MATTRESS        F1: 1.0000  P: 1.0000  R: 1.0000  Support: 2
+  CANCEL_ORDER              F1: 1.0000  P: 1.0000  R: 1.0000  Support: 2
+  CHECK_PINCODE             F1: 1.0000  P: 1.0000  R: 1.0000  Support: 2
+  COD                       F1: 1.0000  P: 1.0000  R: 1.0000  Support: 2
+  DISTRIBUTORS              F1: 1.0000  P: 1.0000  R: 1.0000  Support: 7
+  EMI                       F1: 1.0000  P: 1.0000  R: 1.0000  Support: 5
+  LEAD_GEN                  F1: 1.0000  P: 1.0000  R: 1.0000  Support: 4
+  MATTRESS_COST             F1: 1.0000  P: 1.0000  R: 1.0000  Support: 5
+  ORTHO_FEATURES            F1: 1.0000  P: 1.0000  R: 1.0000  Support: 4
+  PILLOWS                   F1: 1.0000  P: 1.0000  R: 1.0000  Support: 2
+  RETURN_EXCHANGE           F1: 1.0000  P: 1.0000  R: 1.0000  Support: 3
+  SIZE_CUSTOMIZATION        F1: 1.0000  P: 1.0000  R: 1.0000  Support: 2
+  WARRANTY                  F1: 1.0000  P: 1.0000  R: 1.0000  Support: 2
+  WHAT_SIZE_TO_ORDER        F1: 1.0000  P: 1.0000  R: 1.0000  Support: 4
+  100_NIGHT_TRIAL_OFFER     F1: 0.8571  P: 1.0000  R: 0.7500  Support: 4
+  COMPARISON                F1: 0.8000  P: 0.6667  R: 1.0000  Support: 2
+  OFFERS                    F1: 0.8000  P: 0.6667  R: 1.0000  Support: 2
+  PRODUCT_VARIANTS          F1: 0.7500  P: 0.7500  R: 0.7500  Support: 4
+  DELAY_IN_DELIVERY         F1: 0.6667  P: 0.5000  R: 1.0000  Support: 2
+  ERGO_FEATURES             F1: 0.6667  P: 1.0000  R: 0.5000  Support: 2
+  ORDER_STATUS              F1: 0.6667  P: 1.0000  R: 0.5000  Support: 4
